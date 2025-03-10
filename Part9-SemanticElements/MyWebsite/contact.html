@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+
+<html>
+
+	<head>
+		<title>My First Webpage</title>
+	</head>
+ 
+	<body>
+		
+		<nav>
+			<a href="index.html" title="Home"><img src="https://www.clipartmax.com/png/small/4-41237_free-icons-png-new-home-icon.png" alt="Home Icon" width="20px" height="20px"></a>
+			<a href="about.html" title="About Me"><img src="https://www.clipartmax.com/png/small/214-2143742_individuals-whatsapp-profile-picture-icon.png" alt="About Me" width="20px" height="20px"></a>
+			<a href="projects.html" title="Projects"><img src="https://www.clipartmax.com/png/small/140-1408816_icon-coordinated-assessment-project-icon-vector-png.png" alt="Projects" width="20px" height="20px"></a>
+			<a href="contact.html" title="Contact"><img src="https://www.clipartmax.com/png/small/2-24180_black-phone-clipart-font-awesome-phone-icon-png.png" alt="Contact" width="20px" height="20px"></a>
+		</nav>
+		
+		<h1>Contact Form</h1>
+		
+		<form action="submit_form.php">
+		
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name">
+			<br/><br/>
+			
+			<label for="email">Email:</label><input type="email" name="email" id="email"><br/><br/>
+			
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" rows="4" cols="50"></textarea>
+			<br/>
+			<label for="contact_method" >Preferred Contact Method:</label>
+			    <input type="radio" id="email_contact" name="contact_method" value="Email" checked>
+				<label for="email_contact">Email</label>
+				<input type="radio" id="phone_contact" name="contact_method" value="Phone">
+				<label for="phone_contact">Phone</label>
+				<br><br>
+
+			
+			
+			<label for="services" >Services Interested In:</label>
+				<input type="checkbox" id="web_design" name="services" value="Web Design" checked>
+				<label for="web_design">Web Design</label>
+				<input type="checkbox" id="seo" name="services" value="SEO">
+				<label for="seo">SEO</label>
+				<input type="checkbox" id="marketing" name="services" value="Marketing">
+				<label for="marketing">Marketing</label>
+				<br><br>
+
+			
+			
+			<label for="budget">Estimated Budget:</label>
+				<select id="budget" name="budget">
+					<option value="under_500">Under $500</option>
+					<option value="500_1000">$500 - $1000</option>
+					<option value="above_1000">Above $1000</option>
+				</select>
+				<br><br>
+
+			    <button type="submit">Submit</button>
+		
+		</form>
+	
+	
+	
+	</body>
+	
+</html>
