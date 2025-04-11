@@ -1,0 +1,33 @@
+/* Universal Selector */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+/* Grouping Selectors*/
+header, footer{
+    background-color: black;
+    color: white;
+}
+
+
+/*Navbar Styling*/
+
+nav{
+    color: white;
+}
+
+#main-heading{
+    background-color: #003366;
+    color: white;
+
+}
+/* Class Selector */
+.section-styles{
+    background-color: #e0e0e0;
+}
+
+aside{
+    background-color: #d9edf7;
+}
