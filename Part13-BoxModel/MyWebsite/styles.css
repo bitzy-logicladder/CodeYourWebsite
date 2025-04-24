@@ -1,0 +1,93 @@
+/* Universal Selector */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+/* Grouping Selectors*/
+header, footer{
+    background-color: 	#0c457d;
+    color: white;
+}
+
+
+/*Navbar Styling*/
+
+nav{
+    color: white;
+}
+
+#main-heading{
+    background-color: #ffbe4f;
+    color: #0c457d;
+
+}
+/* Class Selector */
+.section-styles{
+    background-color: #e0e0e0;
+}
+
+aside{
+    background-color: #d9edf7;
+}
+
+/* Child Combinator */
+
+.company > div {
+    background-color: #fff2cc;
+}
+
+.team > div{
+    background-color: #baf1fb;
+}
+
+/* Descendent Combinator */
+.company img{
+    height: 200px;
+    width:200px;
+}
+
+.team img{
+    height: 100px;
+    width: 100px;
+}
+
+/*Adjacent Sibling Combinator*/
+
+/* I need to pick the first sibling of div which is a child of section tag */
+
+section div+p{
+    color: red;
+}
+
+/* General Sibling Combinator */
+/* I need to style all p tags which are siblings of h3 tag*/
+
+.company h3~p{
+    color:#0c457d;
+}
+.team h3~p{
+    color:#0ea7b5;
+}
+
+
+/* Styling Tables at Projects Page using Box Model */
+
+table{
+
+    border: 2px solid 	#0ea7b5;
+    border-collapse: collapse;
+    margin:50px;
+   
+
+}
+
+th, td{
+    border: 2px solid 	#0ea7b5;
+    padding: 15px;
+}
+
+th{
+    background-color: #6bd2db;
+}
