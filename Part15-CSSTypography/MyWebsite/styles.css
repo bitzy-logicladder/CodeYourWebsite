@@ -1,0 +1,137 @@
+/* Universal Selector */
+
+*{
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+/* Grouping Selectors*/
+header, footer{
+    background-color: 	#0c457d;
+    color: white;
+}
+
+footer p{
+    text-align: center;
+    font-style: italic;
+    font-size: x-small;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+p{
+    font-size: medium;
+    letter-spacing: 0.5px;
+}
+
+/*Navbar Styling*/
+
+nav{
+    color: white;
+    text-align: center;
+    letter-spacing: 10px;
+    padding-top: 10px;
+    font-size: xx-large;
+}
+
+#main-heading{
+    background-color: #ffbe4f;
+    color: #0c457d;
+
+}
+/* Class Selector */
+.section-styles{
+    background-color: #e0e0e0;
+}
+
+aside{
+    background-color: #d9edf7;
+}
+
+/* Child Combinator */
+
+.company > div {
+    background-color: #fff2cc;
+}
+
+.team > div{
+    background-color: #baf1fb;
+}
+
+/* Descendent Combinator */
+.company img{
+    height: 200px;
+    width:200px;
+}
+
+.team img{
+    height: 100px;
+    width: 100px;
+}
+
+/*Adjacent Sibling Combinator*/
+
+/* I need to pick the first sibling of div which is a child of section tag */
+
+section div+p{
+    color: red;
+}
+
+/* General Sibling Combinator */
+/* I need to style all p tags which are siblings of h3 tag*/
+
+.company h3~p{
+    color:#0c457d;
+}
+.team h3~p{
+    color:#0ea7b5;
+}
+
+
+/* Styling Tables at Projects Page using Box Model */
+
+table{
+
+    border: 2px solid 	#0ea7b5;
+    border-collapse: collapse;
+    margin:50px;
+   
+
+}
+
+th, td{
+    border: 2px solid 	#0ea7b5;
+    padding: 15px;
+}
+
+th{
+    background-color: #6bd2db;
+}
+/* CSS Width AND Height */
+.highlight-box{
+    width: 30%;
+    height: 150px;
+    padding: 20px;
+    margin: 30px auto; /*Centralized horizontally */
+    border:5px solid #0ea7b5;
+    background-color: #fff2cc;
+    box-sizing: border-box;
+    overflow: auto;
+}
