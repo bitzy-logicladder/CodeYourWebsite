@@ -1,0 +1,226 @@
+/* Universal Selector */
+
+*{
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+body{
+    background-color: #F1F9FC;
+background-image: URL("images/bg2.jpg");
+background-repeat: repeat-y;
+background-position: bottom right;
+background-size: contain;
+
+}
+
+header{
+    background-image: url("images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+
+}
+/* Header */
+/* Grouping Selectors*/
+header, footer{
+    background-color: 	#0c457d;
+    color: white;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer p{
+    text-align: center;
+    font-style: italic;
+    font-size: x-small;
+    
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+p{
+    font-size: medium;
+    letter-spacing: 0.5px;
+}
+
+/*Navbar Styling*/
+
+nav{
+    background-color: #0c457d;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+.nav-item {
+	display: inline-block;
+	margin:10px;
+	text-align: center;
+	color: white;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+    position: relative;
+}
+.nav-item img {
+	display: block;
+	margin: 0 auto 5px;
+    position: relative;  /* because z-index only works with position property*/
+    z-index: 3;
+}
+
+.nav-item p {
+	margin: 0;
+	color: white;
+}
+
+.sticker{
+    position: absolute;
+    top: -10px;
+    right:2px;
+    background-color: gold;
+    font-size: 12px;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 5px;
+    z-index:4;
+}
+
+#main-heading{
+    background-color: #ffbe4f;
+    color: #0c457d;
+
+}
+/* Class Selector */
+.section-styles{
+    background-color: #e0e0e0;
+}
+
+ .wrap-container{
+    padding-top: 250px;
+ }
+aside{
+    background-color: #d9edf7;
+}
+
+/* Child Combinator */
+
+.company > div {
+    background-color: #fff2cc;
+    height: 200px;
+}
+
+.team > div{
+    background-color: #baf1fb;
+    height: 100px;
+}
+
+/* Descendent Combinator */
+.company img{
+    height: 200px;
+    width:200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.team img{
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+
+/* CSS Display Properties */
+
+.company > p{
+    clear: both;
+}
+
+/* .company .info img, .company .info h3, .company .info p{
+    border: 2px solid red;
+    display: block;
+    
+} */
+
+/*Adjacent Sibling Combinator*/
+
+/* I need to pick the first sibling of div which is a child of section tag */
+
+section div+p{
+    color: red;
+}
+
+/* General Sibling Combinator */
+/* I need to style all p tags which are siblings of h3 tag*/
+
+.company h3~p{
+    color:#0c457d;
+}
+.team h3~p{
+    color:#0ea7b5;
+}
+
+
+/* Styling Tables at Projects Page using Box Model */
+
+table{
+
+    border: 2px solid 	#0ea7b5;
+    border-collapse: collapse;
+    margin:50px;
+   
+
+}
+
+th, td{
+    border: 2px solid 	#0ea7b5;
+    padding: 15px;
+}
+
+th{
+    background-color: #6bd2db;
+}
+/* CSS Width AND Height */
+.highlight-box{
+    width: 30%;
+    height: 150px;
+    margin: 30px auto 100px; /*Centralized horizontally */
+    border:5px solid #0ea7b5;
+    background-color: #fff2cc;
+    box-sizing: border-box;
+    overflow: auto;
+    z-index: 20;
+}
+
+.highlight-box h3{
+    position: sticky;
+    top: 0;
+    padding-bottom: 10px;
+    background-color: #0ea7b5;
+}
+
